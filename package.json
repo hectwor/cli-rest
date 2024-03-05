@@ -1,0 +1,22 @@
+{
+  "name": "cli-rest-wasp",
+  "version": "1.0.2",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "preinstall": "sh ./install.sh",
+    "start": "./lib/index.js",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "bin": {
+    "restwasp": "./lib/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "conf": "^9.0.2"
+  },
+  "preferGlobal": true
+}
