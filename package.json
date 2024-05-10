@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "sh ./install.sh",
     "start": "./lib/index.js",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+    "patch-release": "npm version patch && npm publish && git push --follow-tags",
+    "test": "jest"
   },
   "bin": {
     "restwasp": "./lib/index.js"
@@ -18,5 +19,8 @@
     "commander": "^7.2.0",
     "conf": "^9.0.2"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
